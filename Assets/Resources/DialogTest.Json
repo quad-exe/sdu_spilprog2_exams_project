@@ -1,0 +1,59 @@
+{
+  "id": "blacksmith_dialogue",
+  "startNodeId": "n1",
+  "nodes": [
+    {
+      "id": "n1",
+      "text": "Hej fremmede. Hvad vil du?",
+      "dialogueChoices": [
+        {
+          "id": "c1",
+          "text": "Hvem er du?",
+          "nextNodeId": "n2"
+        },
+        {
+          "id": "c2",
+          "text": "Har du arbejde?",
+          "nextNodeId": "n3"
+        }
+      ]
+    },
+    {
+      "id": "n2",
+      "text": "Jeg er landsbyens smed.",
+      "dialogueChoices": [
+        {
+          "id": "c3",
+          "text": "Farvel",
+          "nextNodeId": "n4"
+        }
+      ]
+    },
+    {
+      "id": "n3",
+      "text": "Ja, jeg mangler hjælp til at samle jern.",
+      "dialogueChoices": [
+        {
+          "id": "c4",
+          "text": "Jeg hjælper dig",
+          "nextNodeId": "n5"
+        },
+        {
+          "id": "c5",
+          "text": "Ikke nu",
+          "nextNodeId": "n4"
+        }
+      ]
+    },
+    {
+      "id": "n4",
+      "text": "Farvel.",
+      "dialogueChoices": []
+    },
+    {
+      "id": "n5",
+      "text": "Tak! Kom tilbage når du har jern.",
+      "dialogueChoices": []
+    }
+  ]
+}
