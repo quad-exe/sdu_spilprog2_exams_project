@@ -101,7 +101,13 @@
     {
       "id": "n8",
       "text": "Bye",
-      "dialogueChoices": []
+      "dialogueChoices": [
+        {
+          "id": "c12",
+          "text": "Actually i have more questions",
+          "nextNodeId": "n1"
+        }
+      ]
     }
   ]
 }
