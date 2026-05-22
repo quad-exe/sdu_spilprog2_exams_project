@@ -1,0 +1,113 @@
+{
+  "id": "Test_Dialogue_Brandy-Lynn_Chandler",
+  "startNodeId": "n1",
+  "nodes": [
+    {
+      "id": "n1",
+      "text": "Ughhh, what do you want?",
+      "dialogueChoices": [
+        {
+          "id": "c1",
+          "text": "Who are you again?",
+          "nextNodeId": "n2"
+        },
+        {
+          "id": "c2",
+          "text": "What are you doing?",
+          "nextNodeId": "n3"
+        },
+        {
+          "id": "c11",
+          "text": "Bye",
+          "nextNodeId": "n8"
+        }
+      ]
+    },
+    {
+      "id": "n2",
+      "text": "Uh, I'm Brandy-Lynn, we've met before",
+      "dialogueChoices": [
+        {
+          "id": "c3",
+          "text": "Oh, right, sorry...So what are you doing here?",
+          "nextNodeId": "n3"
+        }
+      ]
+    },
+    {
+      "id": "n3",
+      "text": "I'm here doing stupid busywork 'cause my dad asked me to",
+      "dialogueChoices": [
+        {
+          "id": "c4",
+          "text": "What kind of busywork?",
+          "nextNodeId": "n5"
+        },
+        {
+          "id": "c5",
+          "text": "Well, I hope that goes well for you",
+          "nextNodeId": "n4"
+        }
+      ]
+    },
+    {
+      "id": "n4",
+      "text": "Thanks i guess",
+      "dialogueChoices": [
+        {
+          "id": "c6",
+          "text": "Actually i have more questions",
+          "nextNodeId": "n1"
+        }
+      ]
+    },
+    {
+      "id": "n5",
+      "text": "He's havivng me go around and deliver these 'Emergency supply packs' to everyone i can find",
+      "dialogueChoices": [
+        {
+          "id": "c7",
+          "text": "How many do you have left?",
+          "nextNodeId": "n6"
+        },
+        {
+          "id": "c8",
+          "text": "Why don't I help you out?",
+          "nextNodeId": "n7"
+        }
+      ]
+    },
+    {
+      "id": "n6",
+      "text": "I have 2 packs left, but my legs are getting really tired",
+      "dialogueChoices": [
+        {
+          "id": "c9",
+          "text": "I can help you deliver those last two",
+          "nextNodeId": "n7"
+        },
+        {
+          "id": "c10",
+          "text": "Well, I hope you get them delivered so you can rest",
+          "nextNodeId": "n4"
+        }
+      ]
+    },
+    {
+      "id": "n7",
+      "text": "Thank you, i guess you're not a completely lost cause",
+      "dialogueChoices": []
+    },
+    {
+      "id": "n8",
+      "text": "Bye",
+      "dialogueChoices": [
+        {
+          "id": "c12",
+          "text": "Actually i have more questions",
+          "nextNodeId": "n1"
+        }
+      ]
+    }
+  ]
+}

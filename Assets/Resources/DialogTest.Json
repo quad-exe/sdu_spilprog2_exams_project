@@ -1,14 +1,14 @@
 {
-  "id": "Test_Dialogue_Brandy-Lynn_Chandler",
+  "id": "Test_Dialogue_Janet",
   "startNodeId": "n1",
   "nodes": [
     {
       "id": "n1",
-      "text": "Ughhh, what do you want?",
+      "text": "Janet: Oh hiya dearie, are you stocking up too?",
       "dialogueChoices": [
         {
           "id": "c1",
-          "text": "Who are you again?",
+          "text": "uh, Janet, right?",
           "nextNodeId": "n2"
         },
         {
@@ -25,22 +25,22 @@
     },
     {
       "id": "n2",
-      "text": "Uh, I'm Brandy-Lynn, we've met before",
+      "text": "Janet: Yes dearie, my you can be so forgetful",
       "dialogueChoices": [
         {
           "id": "c3",
-          "text": "Oh, right, sorry...So what are you doing here?",
+          "text": "Oh, right...So what are you doing here?",
           "nextNodeId": "n3"
         }
       ]
     },
     {
       "id": "n3",
-      "text": "I'm here doing stupid busywork 'cause my dad asked me to",
+      "text": "Janet: I'm stocking up for making my famous granola bars",
       "dialogueChoices": [
         {
           "id": "c4",
-          "text": "What kind of busywork?",
+          "text": "Granola bars?",
           "nextNodeId": "n5"
         },
         {
@@ -52,7 +52,7 @@
     },
     {
       "id": "n4",
-      "text": "Thanks i guess",
+      "text": "Janet: Thanks you dearie",
       "dialogueChoices": [
         {
           "id": "c6",
@@ -63,44 +63,60 @@
     },
     {
       "id": "n5",
-      "text": "He's havivng me go around and deliver these 'Emergency supply packs' to everyone i can find",
+      "text": "Janet: Of course. With everyone in a tissy over the disaster coming they need something easy to eat",
       "dialogueChoices": [
         {
           "id": "c7",
-          "text": "How many do you have left?",
+          "text": "Do you really plan to make granola bars for everyone in town?",
           "nextNodeId": "n6"
         },
         {
           "id": "c8",
-          "text": "Why don't I help you out?",
-          "nextNodeId": "n7"
+          "text": "Sounds like hard work, count me out",
+          "nextNodeId": "n9"
         }
       ]
     },
     {
       "id": "n6",
-      "text": "I have 2 packs left, but my legs are getting really tired",
+      "text": "Janet: Oh it's really no trouble, I'll make sure everyone gets what they need",
       "dialogueChoices": [
         {
           "id": "c9",
-          "text": "I can help you deliver those last two",
+          "text": "Do you have everything you need then?",
           "nextNodeId": "n7"
         },
         {
           "id": "c10",
           "text": "Well, I hope you get them delivered so you can rest",
           "nextNodeId": "n4"
+        },
+        {
+          "id": "c13",
+          "text": "You really should take care of yourself too, Janet",
+          "nextNodeId": "n10"
         }
       ]
     },
     {
       "id": "n7",
-      "text": "Thank you, i guess you're not a completely lost cause",
-      "dialogueChoices": []
+      "text": "Janet: I'm missing flour, but the store is all out. Without flour, I can't make the granola bars",
+      "dialogueChoices": [
+        {
+          "id": "c14",
+          "text": "I can bring you some flour by tomorrow",
+          "nextNodeId": "n11"
+        },
+        {
+          "id": "c15",
+          "text": "Damn, that sucks, I need to go now",
+          "nextNodeId": "n8"
+        }
+      ]
     },
     {
       "id": "n8",
-      "text": "Bye",
+      "text": "Janet: oh, alright. Goodbye dearie, and stay safe",
       "dialogueChoices": [
         {
           "id": "c12",
@@ -108,6 +124,49 @@
           "nextNodeId": "n1"
         }
       ]
+    },
+    {
+      "id": "n9",
+      "text": "Janet: Oh, and here I thought you were the kind type",
+      "dialogueChoices": [
+        {
+          "id": "c16",
+          "text": "Actually i have more questions",
+          "nextNodeId": "n1"
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "text": "Janet: Oh, you're too kind dearie, don't you fret about me now",
+      "dialogueChoices": [
+        {
+          "id": "c17",
+          "text": "Okay Janet, do you at least have everything you need?",
+          "nextNodeId": "n7"
+        }
+      ]
+    },
+    {
+      "id": "n11",
+      "text": "Janet: Oh thank you so much dearie, if it's not too much trouble that is.",
+      "dialogueChoices": [
+        {
+          "id": "c17",
+          "text": "Goodbye Janet, Stay safe out there",
+          "nextNodeId": "n12"
+        },
+        {
+          "id": "c18",
+          "text": "Bye i guess",
+          "nextNodeId": "n8"
+        }
+      ]
+    },
+    {
+      "id": "n12",
+      "text": "Janet: Oh thank you, and you stay safe too! (this is the end of the Janet route for now)",
+      "dialogueChoices":[]
     }
   ]
 }
