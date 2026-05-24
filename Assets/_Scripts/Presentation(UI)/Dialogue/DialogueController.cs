@@ -5,6 +5,7 @@ using Application.Dialog;
 using Infrastructure.Dialogue;
 using System.Collections.Generic;
 using Domain.Dialogue;
+using UnityEditor.ShaderGraph.Serialization;
 
 public class DialogueController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private TMP_Text npcText;
     [SerializeField] private Transform choicesContainer;
     [SerializeField] private Button choiceButtonPrefab;
+    [SerializeField] private TextAsset jsonDialogueFile;
 
     private DialogueService dialogueService;
 
