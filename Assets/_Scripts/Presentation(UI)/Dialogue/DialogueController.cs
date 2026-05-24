@@ -27,7 +27,6 @@ public class DialogueController : MonoBehaviour
             Debug.LogError("Failed to load dialogue");
             return;
         }
-
         dialogueService.StartDialogue(tree);
         Render();
     }
@@ -45,6 +44,12 @@ public class DialogueController : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
+        if (dialogueService.IsDialogueFinished())
+        {
+            // Handle finished dialogue logic
+            GameManager.Instance.ChangeToNextScreen();
+        }
   
         // 3. Lav nye knapper
         foreach (var choice in node.dialogueChoices)
@@ -55,12 +60,16 @@ public class DialogueController : MonoBehaviour
             Debug.Log($"Choice text: {choice.text}, moving to node: {choice.nextNodeId}, Points: {choice.point}");
 
             string choiceId = choice.id; // vigtig (closure fix)
-            button.onClick.AddListener(() => OnChoiceSelected(choiceId));
+            button.onClick.AddListener(() => OnChoiceSelected(choiceId, choice.point));
         }
     }
 
-    void OnChoiceSelected(string choiceId)
+    void OnChoiceSelected(string choiceId, int points)
     {
+        if (!dialogueService.TestForChoiceIdDublicates(choiceId))
+        {
+            GameManager.Instance.points += points;
+        }
         dialogueService.SelectChoice(choiceId);
         Render();
     }
