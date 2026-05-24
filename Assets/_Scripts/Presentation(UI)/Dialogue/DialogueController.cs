@@ -21,7 +21,7 @@ public class DialogueController : MonoBehaviour
     {
         dialogueService = new DialogueService();
 
-        var tree = DialogueLoader.Load("DialogTest");
+        var tree = DialogueLoader.Load(jsonDialogueFile.name);
         if (tree == null)
         {
             Debug.LogError("Failed to load dialogue");
@@ -51,6 +51,8 @@ public class DialogueController : MonoBehaviour
         {
             var button = Instantiate(choiceButtonPrefab, choicesContainer);
             button.GetComponentInChildren<TMP_Text>().text = choice.text;
+
+            Debug.Log($"Choice text: {choice.text}, moving to node: {choice.nextNodeId}, Points: {choice.point}");
 
             string choiceId = choice.id; // vigtig (closure fix)
             button.onClick.AddListener(() => OnChoiceSelected(choiceId));

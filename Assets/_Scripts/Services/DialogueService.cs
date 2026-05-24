@@ -33,13 +33,14 @@ namespace Application.Dialog
         public void SelectChoice(string choiceId)
         {
             var choice = currentNode.dialogueChoices.Find(c => c.id == choiceId);
+            
 
             if (choice == null)
             {
                 Debug.LogError("Choice not found!");
                 return;
             }
-
+            
             currentNode = nodeLookup[choice.nextNodeId];
         }
     }
