@@ -9,16 +9,19 @@
         {
           "id": "c1",
           "text": "uh, Janet, right?",
+          "point": "0",
           "nextNodeId": "n2"
         },
         {
           "id": "c2",
           "text": "What are you doing?",
+          "point": "0",
           "nextNodeId": "n3"
         },
         {
           "id": "c11",
-          "text": "Bye",
+          "text": "Bye (This will end the conversation)",
+          "point": "0",
           "nextNodeId": "n8"
         }
       ]
@@ -30,6 +33,7 @@
         {
           "id": "c3",
           "text": "Oh, right...So what are you doing here?",
+          "point": "0",
           "nextNodeId": "n3"
         }
       ]
@@ -41,11 +45,13 @@
         {
           "id": "c4",
           "text": "Granola bars?",
+          "point": "5",
           "nextNodeId": "n5"
         },
         {
           "id": "c5",
           "text": "Well, I hope that goes well for you",
+          "point": "5",
           "nextNodeId": "n4"
         }
       ]
@@ -57,6 +63,7 @@
         {
           "id": "c6",
           "text": "Actually i have more questions",
+          "point": "0",
           "nextNodeId": "n1"
         }
       ]
@@ -68,11 +75,13 @@
         {
           "id": "c7",
           "text": "Do you really plan to make granola bars for everyone in town?",
+          "point": "0",
           "nextNodeId": "n6"
         },
         {
           "id": "c8",
           "text": "Sounds like hard work, count me out",
+          "point": "-10",
           "nextNodeId": "n9"
         }
       ]
@@ -84,16 +93,19 @@
         {
           "id": "c9",
           "text": "Do you have everything you need then?",
+          "point": "5",
           "nextNodeId": "n7"
         },
         {
           "id": "c10",
-          "text": "Well, I hope you get them delivered so you can rest",
+          "text": "Well, I hope you get them made",
+          "point": "5",
           "nextNodeId": "n4"
         },
         {
           "id": "c13",
           "text": "You really should take care of yourself too, Janet",
+          "point": "10",
           "nextNodeId": "n10"
         }
       ]
@@ -105,11 +117,13 @@
         {
           "id": "c14",
           "text": "I can bring you some flour by tomorrow",
+          "point": "10",
           "nextNodeId": "n11"
         },
         {
           "id": "c15",
           "text": "Damn, that sucks, I need to go now",
+          "point": "-5",
           "nextNodeId": "n8"
         }
       ]
@@ -118,22 +132,12 @@
       "id": "n8",
       "text": "Janet: oh, alright. Goodbye dearie, and stay safe",
       "dialogueChoices": [
-        {
-          "id": "c12",
-          "text": "Actually i have more questions",
-          "nextNodeId": "n1"
-        }
       ]
     },
     {
       "id": "n9",
       "text": "Janet: Oh, and here I thought you were the kind type",
       "dialogueChoices": [
-        {
-          "id": "c16",
-          "text": "Actually i have more questions",
-          "nextNodeId": "n1"
-        }
       ]
     },
     {
@@ -143,6 +147,7 @@
         {
           "id": "c17",
           "text": "Okay Janet, do you at least have everything you need?",
+          "point": "5",
           "nextNodeId": "n7"
         }
       ]
@@ -154,18 +159,20 @@
         {
           "id": "c17",
           "text": "Goodbye Janet, Stay safe out there",
+          "point": "10",
           "nextNodeId": "n12"
         },
         {
           "id": "c18",
           "text": "Bye i guess",
+          "point": "0",
           "nextNodeId": "n8"
         }
       ]
     },
     {
       "id": "n12",
-      "text": "Janet: Oh thank you, and you stay safe too! (this is the end of the Janet route for now)",
+      "text": "Janet: Oh thank you, and you stay safe too!",
       "dialogueChoices":[]
     }
   ]

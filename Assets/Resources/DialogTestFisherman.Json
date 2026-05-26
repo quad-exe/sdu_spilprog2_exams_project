@@ -20,7 +20,7 @@
         },
         {
           "id": "c11",
-          "text": "Bye",
+          "text": "Bye (This will end the conversation)",
           "point": "0",
           "nextNodeId": "n8"
         }
@@ -66,12 +66,7 @@
       "id": "n4",
       "text": "Mr Fischer: Go on then, Get outta here!",
       "dialogueChoices": [
-        {
-          "id": "c6",
-          "text": "Actually i have more questions",
-          "point": "0",
-          "nextNodeId": "n1"
-        }
+        
       ]
     },
     {

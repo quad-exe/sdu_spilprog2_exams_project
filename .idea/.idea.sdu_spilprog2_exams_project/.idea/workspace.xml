@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a933785d-258f-4db6-8cdc-674c329a6236" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sdu_spilprog2_exams_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdu_spilprog2_exams_project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DialogTest.Json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DialogTest.Json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DialogTestBrandy-Lynn.Json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DialogTestBrandy-Lynn.Json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DialogTestFisherman.Json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DialogTestFisherman.Json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +32,9 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/DialogTest.Json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/DialogTestBrandy-Lynn.Json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/DialogTestFisherman.Json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/DialogTestJanet.Json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -102,7 +107,7 @@
       <updated>1779187220789</updated>
       <workItem from="1779187220790" duration="3252000" />
       <workItem from="1779438297643" duration="2444000" />
-      <workItem from="1779786439293" duration="3379000" />
+      <workItem from="1779786439293" duration="6207000" />
     </task>
     <servers />
   </component>

@@ -1356,7 +1356,7 @@ MonoBehaviour:
   npcText: {fileID: 2096830162}
   choicesContainer: {fileID: 615313911}
   choiceButtonPrefab: {fileID: 3804960411555246583, guid: 757761cee5f9e7b46bec20f3a3517a3d, type: 3}
-  jsonDialogueFile: {fileID: 4900000, guid: 51745dd7bc6b4a141b96253ddbe07fec, type: 3}
+  jsonDialogueFile: {fileID: 4900000, guid: 74303a14665fc2c478fdd653d504d1d5, type: 3}
 --- !u!114 &160422756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,7 +2069,7 @@ MonoBehaviour:
   npcText: {fileID: 947727093}
   choicesContainer: {fileID: 1955490753}
   choiceButtonPrefab: {fileID: 3804960411555246583, guid: 757761cee5f9e7b46bec20f3a3517a3d, type: 3}
-  jsonDialogueFile: {fileID: 4900000, guid: 51745dd7bc6b4a141b96253ddbe07fec, type: 3}
+  jsonDialogueFile: {fileID: 4900000, guid: 4204743188023884d88773cd4aca8210, type: 3}
 --- !u!1 &348014148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,7 +2899,7 @@ MonoBehaviour:
   npcText: {fileID: 330765685}
   choicesContainer: {fileID: 80846173}
   choiceButtonPrefab: {fileID: 3804960411555246583, guid: 757761cee5f9e7b46bec20f3a3517a3d, type: 3}
-  jsonDialogueFile: {fileID: 4900000, guid: 51745dd7bc6b4a141b96253ddbe07fec, type: 3}
+  jsonDialogueFile: {fileID: 4900000, guid: b75be314080a71f4bab85046d5e510cc, type: 3}
 --- !u!114 &656201553
 MonoBehaviour:
   m_ObjectHideFlags: 0

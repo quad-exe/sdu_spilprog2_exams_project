@@ -4,109 +4,115 @@
   "nodes": [
     {
       "id": "n1",
-      "text": "Ughhh, what do you want?",
+      "text": "Brandy-Lynn: Ughhh, what do you want?",
       "dialogueChoices": [
         {
           "id": "c1",
           "text": "Who are you again?",
+          "point": "-5",
           "nextNodeId": "n2"
         },
         {
           "id": "c2",
           "text": "What are you doing?",
+          "point": "5",
           "nextNodeId": "n3"
         },
         {
           "id": "c11",
-          "text": "Bye",
+          "text": "Bye (This will end the conversation)",
+          "point": "0",
           "nextNodeId": "n8"
         }
       ]
     },
     {
       "id": "n2",
-      "text": "Uh, I'm Brandy-Lynn, we've met before",
+      "text": "Brandy-Lynn: Uh, I'm Brandy-Lynn, we've met before",
       "dialogueChoices": [
         {
           "id": "c3",
           "text": "Oh, right, sorry...So what are you doing here?",
+          "point": "0",
           "nextNodeId": "n3"
         }
       ]
     },
     {
       "id": "n3",
-      "text": "I'm here doing stupid busywork 'cause my dad asked me to",
+      "text": "Brandy-Lynn: I'm here doing stupid busywork 'cause my dad asked me to",
       "dialogueChoices": [
         {
           "id": "c4",
           "text": "What kind of busywork?",
+          "point": "5",
           "nextNodeId": "n5"
         },
         {
           "id": "c5",
           "text": "Well, I hope that goes well for you",
+          "point": "3",
           "nextNodeId": "n4"
         }
       ]
     },
     {
       "id": "n4",
-      "text": "Thanks i guess",
+      "text": "Brandy-Lynn: Thanks i guess",
       "dialogueChoices": [
         {
           "id": "c6",
           "text": "Actually i have more questions",
+          "point": "0",
           "nextNodeId": "n1"
         }
       ]
     },
     {
       "id": "n5",
-      "text": "He's havivng me go around and deliver these 'Emergency supply packs' to everyone i can find",
+      "text": "Brandy-Lynn: He's having me go around and deliver these 'Emergency supply packs' to everyone i can find",
       "dialogueChoices": [
         {
           "id": "c7",
           "text": "How many do you have left?",
+          "point": "0",
           "nextNodeId": "n6"
         },
         {
           "id": "c8",
           "text": "Why don't I help you out?",
+          "point": "10",
           "nextNodeId": "n7"
         }
       ]
     },
     {
       "id": "n6",
-      "text": "I have 2 packs left, but my legs are getting really tired",
+      "text": "Brandy-Lynn: I have 2 packs left, but my legs are getting really tired",
       "dialogueChoices": [
         {
           "id": "c9",
           "text": "I can help you deliver those last two",
+          "point": "10",
           "nextNodeId": "n7"
         },
         {
           "id": "c10",
-          "text": "Well, I hope you get them delivered so you can rest",
-          "nextNodeId": "n4"
+          "text": "Well, I hope you get them delivered so you can rest, bye",
+          "point": "5",
+          "nextNodeId": "n8"
         }
       ]
     },
     {
       "id": "n7",
-      "text": "Thank you, i guess you're not a completely lost cause",
+      "text": "Brandy-Lynn: Thank you, i guess you're not a completely lost cause",
       "dialogueChoices": []
     },
     {
       "id": "n8",
-      "text": "Bye",
+      "text": "Brandy-Lynn: Bye",
       "dialogueChoices": [
-        {
-          "id": "c12",
-          "text": "Actually i have more questions",
-          "nextNodeId": "n1"
-        }
       ]
     }
   ]
