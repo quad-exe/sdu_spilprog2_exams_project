@@ -1,0 +1,148 @@
+{
+  "id": "Test_Dialogue_Daniel_Fischer",
+  "startNodeId": "n1",
+  "nodes": [
+    {
+      "id": "n1",
+      "text": "Mr Fischer: Dem young kids these days, not listening a word to what we tell 'em",
+      "dialogueChoices": [
+        {
+          "id": "c1",
+          "text": "Daniel, It's good to see you",
+          "point": "5",
+          "nextNodeId": "n2"
+        },
+        {
+          "id": "c2",
+          "text": "Have you finally lost it old man?",
+          "point": "-5",
+          "nextNodeId": "n3"
+        },
+        {
+          "id": "c11",
+          "text": "Bye (This will end the conversation)",
+          "point": "0",
+          "nextNodeId": "n8"
+        }
+      ]
+    },
+    {
+      "id": "n2",
+      "text": "Mr Fischer: Oh, good to see you too Whippersnapper, what brings you out to visit ol me?",
+      "dialogueChoices": [
+        {
+          "id": "c3",
+          "text": "Didn't you hear about the incoming Tsunami? ",
+          "point": "5",
+          "nextNodeId": "n5"
+        }
+      ]
+    },
+    {
+      "id": "n3",
+      "text": "Mr Fischer: You step over here and I'll teach you some manners the way pappy used ta",
+      "dialogueChoices": [
+        {
+          "id": "c4",
+          "text": "Never mind my manners, Haven't you heard about the Tsunami coming?",
+          "point": "0",
+          "nextNodeId": "n5"
+        },
+        {
+          "id": "c12",
+          "text": "You're right, I'm sorry. But have you heard about the Tsunami coming?",
+          "point": "5",
+          "nextNodeId": "n5"
+        },
+        {
+          "id": "c5",
+          "text": "Okay, I don't want to talk to you anymore",
+          "point": "-5",
+          "nextNodeId": "n4"
+        }
+      ]
+    },
+    {
+      "id": "n4",
+      "text": "Mr Fischer: Go on then, Get outta here!",
+      "dialogueChoices": [
+        
+      ]
+    },
+    {
+      "id": "n5",
+      "text": "Mr Fischer: Course I heard, it's all anyone is talking about. And you know I like to talk",
+      "dialogueChoices": [
+        {
+          "id": "c7",
+          "text": "Of course, are you making the right preparations then?",
+          "point": "5",
+          "nextNodeId": "n6"
+        },
+        {
+          "id": "c8",
+          "text": "Well, it was nice talking to you, but I have to go",
+          "point": "3",
+          "nextNodeId": "n7"
+        }
+      ]
+    },
+    {
+      "id": "n6",
+      "text": "Mr Fischer: Actually I have a small problem, I don't got anything to store mi collection in. ",
+      "dialogueChoices": [
+        {
+          "id": "c9",
+          "text": "I'm sorry, But I can't help with that. Bye",
+          "point": "3",
+          "nextNodeId": "n7"
+        },
+        {
+          "id": "c10",
+          "text": "Your bottle cap collection? I was thinking more something of actual value",
+          "point": "-10",
+          "nextNodeId": "n4"
+        },
+        {
+          "id": "c13",
+          "text": "Maybe i can look for a binder, for all your bottle caps?",
+          "point": "10",
+          "nextNodeId": "n9"
+        }
+      ]
+    },
+    {
+      "id": "n7",
+      "text": "Mr Fischer: Oh alright, don't be a stranger Whippersnapper",
+      "dialogueChoices": []
+    },
+    {
+      "id": "n8",
+      "text": "Mr Fischer: Bye",
+      "dialogueChoices": []
+    },
+    {
+      "id": "n9",
+      "text": "Mr Fischer: I wouldn't say you should go out of your way for it...But i'd sure be grateful",
+      "dialogueChoices": [
+        {
+          "id": "c14",
+          "text": "I promise I will get you that binder",
+          "point": "10",
+          "nextNodeId": "n10"
+        },
+        {
+          "id": "c15",
+          "text": "I'll try, but no promises",
+          "point": "5",
+          "nextNodeId": "n10"
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "text": "Mr Fischer: Thank you Whippersnapper",
+      "dialogueChoices": []
+    }
+  ]
+}
