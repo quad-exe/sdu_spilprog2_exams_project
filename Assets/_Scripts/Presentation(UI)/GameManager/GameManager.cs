@@ -6,9 +6,11 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Dialogue and Screens Management")]
     [SerializeField] private DialogueService dialogueService;
     [SerializeField] private List<GameObject> screens;
     public int points;
+
 
     // Singleton pattern implementation
     private static GameManager _instance;
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 
     // This method is used to set up the singleton instance if it doesn't already exist
     private static void SetupInstance()

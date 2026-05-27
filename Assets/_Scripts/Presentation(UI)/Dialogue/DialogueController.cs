@@ -5,7 +5,6 @@ using Application.Dialog;
 using Infrastructure.Dialogue;
 using System.Collections.Generic;
 using Domain.Dialogue;
-using UnityEditor.ShaderGraph.Serialization;
 
 public class DialogueController : MonoBehaviour
 {
