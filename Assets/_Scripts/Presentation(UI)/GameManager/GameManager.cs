@@ -7,10 +7,14 @@ using System.Collections;
 public class GameManager : MonoBehaviour
 {
     [Header("Dialogue and Screens Management")]
-    [SerializeField] private DialogueService dialogueService;
     [SerializeField] private List<GameObject> screens;
     public int points;
 
+    [HideInInspector] public int JanetPoints = 0;
+    [HideInInspector] public int DanielPoints = 0;
+    [HideInInspector] public int BrandyPoints = 0;
+
+    private DialogueService dialogueService;
 
     // Singleton pattern implementation
     private static GameManager _instance;

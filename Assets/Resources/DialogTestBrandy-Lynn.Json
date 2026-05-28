@@ -1,5 +1,6 @@
 {
   "id": "Test_Dialogue_Brandy-Lynn_Chandler",
+  "npcName": "Brandy",
   "startNodeId": "n1",
   "nodes": [
     {

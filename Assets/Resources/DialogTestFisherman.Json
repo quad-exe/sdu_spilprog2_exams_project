@@ -1,5 +1,6 @@
 {
   "id": "Test_Dialogue_Daniel_Fischer",
+  "npcName": "Daniel",
   "startNodeId": "n1",
   "nodes": [
     {

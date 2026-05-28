@@ -17,7 +17,7 @@ public class DialogueController : MonoBehaviour
     private DialogueService dialogueService;
 
     void Start()
-    {
+    {   
         dialogueService = new DialogueService();
 
         var tree = DialogueLoader.Load(jsonDialogueFile.name);
@@ -27,6 +27,7 @@ public class DialogueController : MonoBehaviour
             return;
         }
         dialogueService.StartDialogue(tree);
+        
         Render();
     }
 
@@ -34,6 +35,9 @@ public class DialogueController : MonoBehaviour
     {
         var node = dialogueService.GetCurrentNode();
         if (node == null) return;
+
+        //debug
+        
 
         // 1. Vis NPC tekst
         npcText.text = node.text;
@@ -47,6 +51,7 @@ public class DialogueController : MonoBehaviour
         if (dialogueService.IsDialogueFinished())
         {
             // Handle finished dialogue logic
+            dialogueService.AddGoodWillPointsToNPC();
             GameManager.Instance.ChangeToNextScreen();
         }
   

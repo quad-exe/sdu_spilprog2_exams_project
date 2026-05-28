@@ -10,10 +10,13 @@ namespace Application.Dialog
         private Dictionary<string, DialogueNode> nodeLookup;
         private DialogueNode currentNode;
         private List<string> choiceIds = new List<string>();
+        
+        public string CurrentNPC {get ; private set;}
 
         public void StartDialogue(DialogueTree dialogueTree)
         {
             ResetForNewScreen();
+
             tree = dialogueTree;
 
             // Build lookup for fast access
@@ -24,6 +27,9 @@ namespace Application.Dialog
             }
 
             currentNode = nodeLookup[tree.startNodeId];
+
+            CurrentNPC = tree.npcName;
+            Debug.Log($"Starting dialogue with NPC: {CurrentNPC}");
         }
 
         public DialogueNode GetCurrentNode()
@@ -65,6 +71,24 @@ namespace Application.Dialog
         public bool IsDialogueFinished()
         {
             return currentNode.dialogueChoices.Count == 0;
+        }
+
+        public void AddGoodWillPointsToNPC()
+        {
+            switch (CurrentNPC)
+            {
+                case "Janet":
+                    GameManager.Instance.JanetPoints += GameManager.Instance.points;
+                    break;
+                case "Daniel":
+                    GameManager.Instance.DanielPoints += GameManager.Instance.points;
+                    break;
+                case "Brandy":
+                    GameManager.Instance.BrandyPoints += GameManager.Instance.points;
+                    break;
+            }
+            Debug.Log($"Added {GameManager.Instance.points} points to {CurrentNPC}");
+            Debug.Log($"Current points - Janet: {GameManager.Instance.JanetPoints}, Daniel: {GameManager.Instance.DanielPoints}, Brandy: {GameManager.Instance.BrandyPoints}");
         }
     }
 }

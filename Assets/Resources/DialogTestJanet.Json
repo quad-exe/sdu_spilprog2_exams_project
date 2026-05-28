@@ -1,5 +1,6 @@
 {
   "id": "Test_Dialogue_Janet",
+  "npcName": "Janet",
   "startNodeId": "n1",
   "nodes": [
     {
