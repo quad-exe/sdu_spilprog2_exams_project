@@ -1,10 +1,11 @@
 {
   "id": "Test_Dialogue_Brandy-Lynn_Chandler",
+  "npcName": "Brandy-Lynn",
   "startNodeId": "n1",
   "nodes": [
     {
       "id": "n1",
-      "text": "Brandy-Lynn: Ughhh, what do you want?",
+      "text": "Ughhh, what do you want?",
       "dialogueChoices": [
         {
           "id": "c1",
@@ -28,7 +29,7 @@
     },
     {
       "id": "n2",
-      "text": "Brandy-Lynn: Uh, I'm Brandy-Lynn, we've met before",
+      "text": "Uh, I'm Brandy-Lynn, we've met before",
       "dialogueChoices": [
         {
           "id": "c3",
@@ -40,7 +41,7 @@
     },
     {
       "id": "n3",
-      "text": "Brandy-Lynn: I'm here doing stupid busywork 'cause my dad asked me to",
+      "text": "I'm here doing stupid busywork 'cause my dad asked me to",
       "dialogueChoices": [
         {
           "id": "c4",
@@ -58,7 +59,7 @@
     },
     {
       "id": "n4",
-      "text": "Brandy-Lynn: Thanks i guess",
+      "text": "Thanks i guess",
       "dialogueChoices": [
         {
           "id": "c6",
@@ -70,7 +71,7 @@
     },
     {
       "id": "n5",
-      "text": "Brandy-Lynn: He's having me go around and deliver these 'Emergency supply packs' to everyone i can find",
+      "text": "He's having me go around and deliver these 'Emergency supply packs' to everyone i can find",
       "dialogueChoices": [
         {
           "id": "c7",
@@ -88,7 +89,7 @@
     },
     {
       "id": "n6",
-      "text": "Brandy-Lynn: I have 2 packs left, but my legs are getting really tired",
+      "text": "I have 2 packs left, but my legs are getting really tired",
       "dialogueChoices": [
         {
           "id": "c9",
@@ -106,12 +107,12 @@
     },
     {
       "id": "n7",
-      "text": "Brandy-Lynn: Thank you, i guess you're not a completely lost cause",
+      "text": "Thank you, i guess you're not a completely lost cause",
       "dialogueChoices": []
     },
     {
       "id": "n8",
-      "text": "Brandy-Lynn: Bye",
+      "text": "Bye",
       "dialogueChoices": [
       ]
     }

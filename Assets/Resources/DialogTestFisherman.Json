@@ -1,10 +1,11 @@
 {
   "id": "Test_Dialogue_Daniel_Fischer",
+  "npcName": "Mr. Fischer",
   "startNodeId": "n1",
   "nodes": [
     {
       "id": "n1",
-      "text": "Mr Fischer: Dem young kids these days, not listening a word to what we tell 'em",
+      "text": "Dem young kids these days, not listening to a word to what we tell 'em",
       "dialogueChoices": [
         {
           "id": "c1",
@@ -28,7 +29,7 @@
     },
     {
       "id": "n2",
-      "text": "Mr Fischer: Oh, good to see you too Whippersnapper, what brings you out to visit ol me?",
+      "text": "Oh, good to see you too Whippersnapper, what brings you out to visit ol me?",
       "dialogueChoices": [
         {
           "id": "c3",
@@ -40,7 +41,7 @@
     },
     {
       "id": "n3",
-      "text": "Mr Fischer: You step over here and I'll teach you some manners the way pappy used ta",
+      "text": "You step over here and I'll teach you some manners the way pappy used ta",
       "dialogueChoices": [
         {
           "id": "c4",
@@ -64,14 +65,14 @@
     },
     {
       "id": "n4",
-      "text": "Mr Fischer: Go on then, Get outta here!",
+      "text": "Go on then, Get outta here!",
       "dialogueChoices": [
         
       ]
     },
     {
       "id": "n5",
-      "text": "Mr Fischer: Course I heard, it's all anyone is talking about. And you know I like to talk",
+      "text": "Course I heard, it's all anyone is talking about. And you know I like to talk",
       "dialogueChoices": [
         {
           "id": "c7",
@@ -89,7 +90,7 @@
     },
     {
       "id": "n6",
-      "text": "Mr Fischer: Actually I have a small problem, I don't got anything to store mi collection in. ",
+      "text": "Actually I have a small problem, I don't got anything to store mi collection in. ",
       "dialogueChoices": [
         {
           "id": "c9",
@@ -113,17 +114,17 @@
     },
     {
       "id": "n7",
-      "text": "Mr Fischer: Oh alright, don't be a stranger Whippersnapper",
+      "text": "Oh alright, don't be a stranger Whippersnapper",
       "dialogueChoices": []
     },
     {
       "id": "n8",
-      "text": "Mr Fischer: Bye",
+      "text": "Bye",
       "dialogueChoices": []
     },
     {
       "id": "n9",
-      "text": "Mr Fischer: I wouldn't say you should go out of your way for it...But i'd sure be grateful",
+      "text": "I wouldn't say you should go out of your way for it...But i'd sure be grateful",
       "dialogueChoices": [
         {
           "id": "c14",
@@ -141,7 +142,7 @@
     },
     {
       "id": "n10",
-      "text": "Mr Fischer: Thank you Whippersnapper",
+      "text": "Thank you Whippersnapper",
       "dialogueChoices": []
     }
   ]
