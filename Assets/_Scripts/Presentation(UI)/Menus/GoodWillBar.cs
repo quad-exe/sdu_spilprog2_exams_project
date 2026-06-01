@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GoodWillBar : MonoBehaviour
 {
@@ -10,17 +12,26 @@ public class GoodWillBar : MonoBehaviour
 
     void OnEnable()
     {
+        NPCName = gameObject.name; // Assuming the GameObject's name corresponds to the NPC's name
+        gameManager = GameManager.Instance;
+        Debug.Log($"GoodWillBar initialized for NPC: {NPCName}");
+        imageComponent = ImageFill.GetComponent<Image>();
         ResetGoodWillBar();
+        // AddGoodWillPointsToNPC();
+        StartCoroutine(DelayedAddGoodWillPoints());
+    }
+
+    private IEnumerator DelayedAddGoodWillPoints()
+    {
+        yield return new WaitForSeconds(0.2f);
+        AddGoodWillPointsToNPC();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        NPCName = gameObject.name; // Assuming the GameObject's name corresponds to the NPC's name
-        gameManager = GameManager.Instance;
-        Debug.Log($"GoodWillBar initialized for NPC: {NPCName}");
-        imageComponent = ImageFill.GetComponent<Image>();
-        AddGoodWillPointsToNPC();
+        
+        //AddGoodWillPointsToNPC();
     }
 
     // Update is called once per frame
