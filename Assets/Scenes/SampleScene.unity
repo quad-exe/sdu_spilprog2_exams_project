@@ -7643,7 +7643,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Janice
+  m_text: Janet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 53b9e8b6d97b45d46aa3bba022244a63, type: 2}
   m_sharedMaterial: {fileID: -3371138680032648070, guid: 53b9e8b6d97b45d46aa3bba022244a63, type: 2}
@@ -8850,7 +8850,7 @@ MonoBehaviour:
   npcText: {fileID: 510461402}
   choicesContainer: {fileID: 813604791}
   choiceButtonPrefab: {fileID: 3804960411555246583, guid: 757761cee5f9e7b46bec20f3a3517a3d, type: 3}
-  jsonDialogueFile: {fileID: 4900000, guid: 61341bb8c825f4a4c91c8e43c1b52ce8, type: 3}
+  jsonDialogueFile: {fileID: 4900000, guid: 74303a14665fc2c478fdd653d504d1d5, type: 3}
 --- !u!224 &973164073
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8883,7 +8883,7 @@ GameObject:
   - component: {fileID: 983414277}
   - component: {fileID: 983414278}
   m_Layer: 0
-  m_Name: Daniel
+  m_Name: Mr. Fischer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11850,6 +11850,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 628650948}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1385220456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12975,7 +12987,7 @@ GameObject:
   - component: {fileID: 1477470122}
   - component: {fileID: 1477470123}
   m_Layer: 0
-  m_Name: Brandy
+  m_Name: Brandy-Lynn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
