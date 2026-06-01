@@ -38,10 +38,10 @@ public class GoodWillBar : MonoBehaviour
             case "Janet":
                 UpdateGoodWillBar(gameManager.JanetPoints);
                 break;
-            case "Daniel":
+            case "Mr. Fischer":
                 UpdateGoodWillBar(gameManager.DanielPoints);
                 break;
-            case "Brandy":
+            case "Brandy-Lynn":
                 UpdateGoodWillBar(gameManager.BrandyPoints);
                 break;
             default:

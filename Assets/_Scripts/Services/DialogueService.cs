@@ -80,10 +80,10 @@ namespace Application.Dialog
                 case "Janet":
                     GameManager.Instance.JanetPoints += GameManager.Instance.points;
                     break;
-                case "Daniel":
+                case "Mr. Fischer":
                     GameManager.Instance.DanielPoints += GameManager.Instance.points;
                     break;
-                case "Brandy":
+                case "Brandy-Lynn":
                     GameManager.Instance.BrandyPoints += GameManager.Instance.points;
                     break;
             }
