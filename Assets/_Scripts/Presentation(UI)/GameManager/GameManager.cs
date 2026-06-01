@@ -71,10 +71,21 @@ public class GameManager : MonoBehaviour
         {
             if (screens[i].activeSelf)
             {
-                yield return new WaitForSeconds(3.0f);
-                screens[i].SetActive(false);
-                screens[(i + 1) % screens.Count].SetActive(true);
-                break;
+                if(screens[0].activeSelf)
+                {
+                    yield return new WaitForSeconds(0.7f);
+                    screens[i].SetActive(false);
+                    screens[(i + 1) % screens.Count].SetActive(true);
+                    break;
+                }
+                else
+                {
+                    yield return new WaitForSeconds(2.0f);
+                    screens[i].SetActive(false);
+                    screens[(i + 1) % screens.Count].SetActive(true);
+                    break;
+                }
+                
             }
         }
     }

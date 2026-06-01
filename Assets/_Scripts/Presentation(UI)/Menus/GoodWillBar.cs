@@ -8,6 +8,11 @@ public class GoodWillBar : MonoBehaviour
     Image imageComponent;
     GameManager gameManager;
 
+    void OnEnable()
+    {
+        ResetGoodWillBar();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,5 +53,10 @@ public class GoodWillBar : MonoBehaviour
                 Debug.LogError($"Unknown NPC: {NPCName}");
                 break;
         }
+    }
+
+    public void ResetGoodWillBar()
+    {
+        UpdateGoodWillBar(0);
     }
 }
