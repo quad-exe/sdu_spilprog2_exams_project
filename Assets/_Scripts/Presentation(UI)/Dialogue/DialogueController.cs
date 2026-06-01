@@ -5,19 +5,20 @@ using Application.Dialog;
 using Infrastructure.Dialogue;
 using System.Collections.Generic;
 using Domain.Dialogue;
-using UnityEditor.ShaderGraph.Serialization;
 
 public class DialogueController : MonoBehaviour
 {
     [Header("UI")]
+    [SerializeField] private TMP_Text npcNameText;
     [SerializeField] private TMP_Text npcText;
     [SerializeField] private Transform choicesContainer;
     [SerializeField] private Button choiceButtonPrefab;
     [SerializeField] private TextAsset jsonDialogueFile;
+    
 
     private DialogueService dialogueService;
 
-    void Start()
+    private void OnEnable()
     {
         dialogueService = new DialogueService();
 
@@ -28,13 +29,24 @@ public class DialogueController : MonoBehaviour
             return;
         }
         dialogueService.StartDialogue(tree);
+
+        npcNameText.text = tree.npcName;
+        
         Render();
+    }
+
+    void Start()
+    {   
+    
     }
 
     void Render()
     {
         var node = dialogueService.GetCurrentNode();
         if (node == null) return;
+
+        //debug
+        
 
         // 1. Vis NPC tekst
         npcText.text = node.text;
@@ -48,6 +60,7 @@ public class DialogueController : MonoBehaviour
         if (dialogueService.IsDialogueFinished())
         {
             // Handle finished dialogue logic
+            dialogueService.AddGoodWillPointsToNPC();
             GameManager.Instance.ChangeToNextScreen();
         }
   

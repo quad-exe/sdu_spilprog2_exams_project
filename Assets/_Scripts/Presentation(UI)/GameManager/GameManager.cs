@@ -6,9 +6,15 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private DialogueService dialogueService;
+    [Header("Dialogue and Screens Management")]
     [SerializeField] private List<GameObject> screens;
     public int points;
+
+    [HideInInspector] public int JanetPoints = 0;
+    [HideInInspector] public int DanielPoints = 0;
+    [HideInInspector] public int BrandyPoints = 0;
+
+    private DialogueService dialogueService;
 
     // Singleton pattern implementation
     private static GameManager _instance;
@@ -38,6 +44,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 
     // This method is used to set up the singleton instance if it doesn't already exist
     private static void SetupInstance()
@@ -70,5 +77,14 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void ResetGame()
+    {
+        points = 0;
+        JanetPoints = 0;
+        DanielPoints = 0;
+        BrandyPoints = 0;
+        Debug.Log("Game reset: Points and NPC goodwill points set to 0");
     }
 }

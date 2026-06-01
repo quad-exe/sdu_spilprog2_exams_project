@@ -9,6 +9,7 @@ namespace Domain.Dialogue
     {
         // here the id is set to public for testing purposes. Should be set back to private
         public string id;
+        public string npcName;
         public string startNodeId;
         public List<DialogueNode> nodes;
     }
