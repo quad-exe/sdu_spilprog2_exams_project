@@ -78,4 +78,13 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void ResetGame()
+    {
+        points = 0;
+        JanetPoints = 0;
+        DanielPoints = 0;
+        BrandyPoints = 0;
+        Debug.Log("Game reset: Points and NPC goodwill points set to 0");
+    }
 }

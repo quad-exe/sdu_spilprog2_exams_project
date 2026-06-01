@@ -9,15 +9,17 @@ using Domain.Dialogue;
 public class DialogueController : MonoBehaviour
 {
     [Header("UI")]
+    [SerializeField] private TMP_Text npcNameText;
     [SerializeField] private TMP_Text npcText;
     [SerializeField] private Transform choicesContainer;
     [SerializeField] private Button choiceButtonPrefab;
     [SerializeField] private TextAsset jsonDialogueFile;
+    
 
     private DialogueService dialogueService;
 
-    void Start()
-    {   
+    private void OnEnable()
+    {
         dialogueService = new DialogueService();
 
         var tree = DialogueLoader.Load(jsonDialogueFile.name);
@@ -27,8 +29,15 @@ public class DialogueController : MonoBehaviour
             return;
         }
         dialogueService.StartDialogue(tree);
+
+        npcNameText.text = tree.npcName;
         
         Render();
+    }
+
+    void Start()
+    {   
+    
     }
 
     void Render()

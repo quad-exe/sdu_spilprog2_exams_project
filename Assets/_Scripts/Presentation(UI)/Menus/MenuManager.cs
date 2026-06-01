@@ -1,28 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject mainMenuScreen;
     [SerializeField] private GameObject MenuSettingsScreen;
     [SerializeField] private GameObject MenuQuitScreen;
+    [SerializeField] private VideoPlayer backgroundVideoPlayer;
+    [SerializeField] private Canvas GameScreen;
 
     private bool isMenuActive = false;
 
-    private RawImage backgroundImage;
+    // private RawImage backgroundImage;
 
      private void Awake()
     {
-        backgroundImage = GetComponent<RawImage>();
+        SetMenuActive();
+    }
+
+    private void OnEnable()
+    {
+        
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        isMenuActive = true;
-        mainMenuScreen.SetActive(true);
-        MenuSettingsScreen.SetActive(false);
-        MenuQuitScreen.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -32,7 +37,7 @@ public class MenuManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            isMenuActive = true;
+            OnPause();
             MenuQuitScreen.SetActive(true);
         }
     }
@@ -46,8 +51,8 @@ public class MenuManager : MonoBehaviour
 
     public void BackgroundImageIsEnabled()
     {
-        if(isMenuActive) backgroundImage.enabled = true;
-        else backgroundImage.enabled = false;
+        if(isMenuActive) backgroundVideoPlayer.enabled = true;
+        else backgroundVideoPlayer.enabled = false;
     }
 
     public void OnPause()
@@ -55,6 +60,7 @@ public class MenuManager : MonoBehaviour
         Debug.Log("Pause Game");
         Time.timeScale = 0f;
         isMenuActive = true;
+        GameScreen.enabled = false;
     }
 
     public void OnResume()
@@ -62,5 +68,14 @@ public class MenuManager : MonoBehaviour
         Debug.Log("Resume Game");
         Time.timeScale = 1f;
         isMenuActive = false;
+        GameScreen.enabled = true;
+    }
+
+    public void SetMenuActive()
+    {
+        isMenuActive = true;
+        mainMenuScreen.SetActive(true);
+        MenuSettingsScreen.SetActive(false);
+        MenuQuitScreen.SetActive(false);
     }
 }
